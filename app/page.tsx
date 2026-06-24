@@ -1,7 +1,7 @@
 // src/app/page.tsx
 'use client';
 import { useEffect, useState } from 'react';
-import { getGpoData } from '@/lib/gas-api';
+import { getGpoData } from '../lib/gas-api';
 
 export default function Home() {
   const [data, setData] = useState<any>(null);
