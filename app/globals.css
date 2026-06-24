@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ── สีหลัก GPO (ปรับจากค่ามาตรฐาน) ── */
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%; /* สีเข้มโทนเนวี่/เทา ให้ดูสะอาดกว่าสีดำสนิท */
+    
+    /* เพิ่มสี Teal ของเราเข้าไปใน Root เพื่อให้เรียกใช้ได้ทั่วโปรเจกต์ */
+    --primary: 175 70% 25%; /* Teal เข้ม */
+    --primary-foreground: 0 0% 100%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 175 70% 25%;
+    
+    --radius: 0.75rem; /* ปรับให้มุมมนขึ้นนิดนึงดูทันสมัย */
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-teal-50/40 text-foreground font-sans; /* ใช้พื้นหลัง Teal-50 ตั้งแต่ระดับ body */
+  }
+}
